@@ -1,0 +1,121 @@
+JavaScript Concepts and Challenges
+
+1. Template Literals
+
+Using template literals to easily insert variables into a string.
+
+2. Object Literals
+
+Creating an object with city and state and adding a default country value.
+
+3. For-Of Loop (String)
+
+Looping through each letter in a name.
+
+4. For-Of Loop (Array of Objects)
+
+Iterating through an array of students and printing their names and cities.
+
+5. Spread Operator
+
+Expanding an array by adding new elements while keeping the original data.
+
+6. Default Parameters
+
+Setting a default value for a function parameter in case no argument is provided.
+
+7. Includes Method
+
+Checking if an array contains a specific value.
+
+8. Import & Export
+
+Creating a function to add numbers and making it reusable across files.
+
+9. padStart and padEnd Methods
+
+Adding characters to the start or end of a string to reach a specified length.
+
+10. Classes in JavaScript
+
+Defining a class for a product and displaying product details using a method.
+
+11. Inheritance in Classes
+
+Creating a parent class (Player) and a child class (Badminton Player) to reuse and extend properties.
+
+12. Promises (Async Operations)
+
+Simulating an asynchronous transaction process with success and failure conditions.
+
+13. Fetch API
+
+Fetching data from an external API and handling the response.
+
+14. Switch Case
+
+Using a switch statement to execute different actions based on a variable's value.
+
+15. Loops (For, While, Do-While)
+
+Different looping techniques to repeat actions multiple times.
+
+16. if-else Conditions
+
+Using conditions to execute specific code blocks based on comparisons.
+
+17. Map Function (Array Operations)
+
+Transforming arrays by applying a function to each element, such as finding square roots, doubling numbers, or converting text to uppercase.
+
+18. forEach Method
+
+Iterating through an array and performing actions like summing values or finding the maximum number.
+
+19. Combining Arrays with map()
+
+Merging two arrays by pairing their elements together.
+
+20. Extracting Information from an Array
+
+Using map() to generate structured information about an array's content.
+
+21. Working with Objects Using for-in Loop
+
+Iterating through object properties and displaying key-value pairs.
+
+22. forEach Method with Objects
+
+Looping through an array of objects and extracting specific details.
+
+23. Applying forEach to Create a New Array
+
+Using forEach to transform an existing array by applying operations like multiplication.
+
+24. Finding Maximum Value in an Array
+
+Using forEach to iterate through an array and determine the largest value.
+
+25. Do-While Loop
+
+Executing a loop at least once before checking the condition.
+
+26. Finding Eligibility to Vote Using map()
+
+Transforming an array of user data to determine voting eligibility.
+
+27. Converting Strings to Uppercase Using map()
+
+Applying the map function to capitalize each word in an array.
+
+28. Creating a New Array with Doubled Values Using map()
+
+Multiplying each element in an array by two and storing the results.
+
+29. Handling API Calls with Async/Await
+
+Using async/await to fetch data and handle responses cleanly.
+
+30. Uploading Photos with Async/Await
+
+Simulating an image upload process using Promises and async/await.
