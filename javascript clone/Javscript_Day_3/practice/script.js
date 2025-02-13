@@ -592,6 +592,33 @@
 
 
 
+//Callback function
+
+
+// function funcone(){
+//     console.log("I'm coming from function one");
+// }
+
+// function functwo(para){
+//     para();
+// }
+
+// functwo(funcone);
+
+//SetTimeout
+
+
+// setTimeout(function(){
+//     console.log("Hi I'm setimeout ");
+// },3000);
+
+// setInterval(function(){
+//     console.log("Hi I'm setInterval");
+// },3000);
+
+
+
+
 
 
 // Numbers and Strings
@@ -919,9 +946,12 @@
 
 
 //String trim()
+
 // let lnames = "   vignesh_remitbee   " ;
 //  let c = lnames.trim();
 //  console.log(c);
+
+
 
 
 //String fromCharCode
@@ -929,24 +959,35 @@
 // console.log(String.fromCharCode(65,66,67,68,69));
 
 
+
+
 // Every(Array)
 
-const arr = [2,2,8,6,9];
+// const arr = [2,2,8,6,9];
 
-let resultt=arr.every((value)=>{
-    return value%2==0;
-})
+// let resultt=arr.every((value)=>{
+//     return value%2==0;
+// })
 
-console.log(resultt);//false
+// console.log(resultt);//false
+
+
 
 
 
 //Some(Array)
-let answer=arr.some((value)=>{
-    return value%2==0;
-});
 
-console.log(answer);
+// let answer=arr.some((value)=>{
+//     return value%2==0;
+// });
+
+// console.log(answer);
+
+
+
+
+
+
 
 
 
