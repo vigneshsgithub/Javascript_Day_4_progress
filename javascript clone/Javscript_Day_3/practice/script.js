@@ -961,6 +961,163 @@
 
 
 
+
+
+//Array and its inbuilt Methods:
+
+
+//Normal array:
+
+// const a =[10,20,30,40];
+// console.log(a[1]);
+
+
+
+
+//Passing array as contructor value:
+
+// let b=new Array(10,15,20,25,true,"apple",{m1:10,m2:20,m3:30});
+// console.log(b);
+
+
+
+
+//Map in array:(shows only true or false)
+
+// const a =[1,2,3,4,5,6];
+
+// let b =a.map(values=> {return values%2==0});
+// console.log(b);
+
+
+
+
+
+//ForEach in array:
+
+// const a =[1,2,3,4,5,6];
+
+// let b=a.forEach((values)=>{
+//     console.log(values*2);
+// });
+
+
+
+
+//Filter in array:(filters the array and shows the values)
+
+
+// const a = [2,3,4,5,6,7];
+// let b =a.filter(values=> values%2==0);
+// console.log(b);
+
+
+//Filter in Array (object):
+
+// const users=[
+//     {
+//   Name:"vignesh",
+//   Age:21
+// },
+//   {
+//   Name:"arun",
+//   Age:17
+// },
+
+//   {
+//   Name:"rajin",
+//   Age:19
+// }]
+
+// let b=users.filter(user=>user.Age>18);
+// console.log(b);
+
+//Filtering words more than length of four using filter:
+
+// const arr=['arun','vignesh','vishwesh','deep'];
+
+// let len=arr.filter(value=>value.length>4);
+// console.log(len);
+
+//Filtering with multiple conditions:
+
+// const products=[
+//     {Name:"apple",Category:'fruit',Price:100},
+//     {Name:"broccoli",Category:'veg',Price:250},
+//     {Name:"banana",Category:'fruit',Price:200},
+//     {Name:"orange",Category:'fruit',Price:250}
+// ]
+
+//     let b = products.filter(product=>product.Category==='fruit' && product.Price>100);
+//     console.log(b);
+
+
+
+//Reduce in Array:
+
+// const a=[1,2,3,4,5,6,7,8,11,1];
+
+// // let b=a.reduce((acc,val)=>{
+// //   return acc+val;
+// // })
+
+// let b = a.reduce((acc,val)=>{
+//    return Math.max(acc,val);
+// })
+
+// console.log(b);
+
+// const groups=[
+// {name:"vignesh",city:"Chennai"},
+// {name:"arun",city:"Madurai"},
+// {name:"rajin",city:"Madurai"},
+// {name:"vishwesh",city:"Madurai"}
+// ];
+
+// let b = groups.reduce((acumulator,groups,)=>{
+//     groups.city
+// })
+
+
+//Array Methods:
+
+
+//Slice ():
+
+// const numbers=[ 1,2,3,4,5,6,7,8,9,0,true,"hi"];
+
+// let b =numbers.slice(2,4);
+// console.log(b);
+
+
+// const numb=[ 1,2,3,4,5,6,7,8,9,0,true,"hi"];
+
+// let c =numb.;
+// console.log(c);
+
+
+// let a ="vignesh";
+
+// console.log(a.substr(2,3));
+
+//Length():
+
+// const numbers=[ 1,2,3,4,5,6,7,8,9,0,true,"hi"];
+
+//  let b =numbers.length;
+// console.log(b);
+
+
+
+
+
+
+
+
+
+
+
+
 // Every(Array)
 
 // const arr = [2,2,8,6,9];
@@ -970,8 +1127,6 @@
 // })
 
 // console.log(resultt);//false
-
-
 
 
 
