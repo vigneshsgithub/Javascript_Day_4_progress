@@ -119,3 +119,99 @@ Using async/await to fetch data and handle responses cleanly.
 30. Uploading Photos with Async/Await
 
 Simulating an image upload process using Promises and async/await.
+
+
+
+JavaScript Array Methods Explained in Simple Terms
+
+1. Slice()
+
+Extracts a portion of an array without modifying the original array.
+
+2. Length Property
+
+Returns the total number of elements in an array.
+
+3. Flattening an Array using Reduce
+
+Converts a nested array into a single-level array.
+
+4. Finding the Largest Element using Reduce
+
+Finds the maximum value in an array using the reduce function.
+
+5. Splice()
+
+Adds, removes, or replaces elements in an array while modifying the original array.
+
+6. Concat()
+
+Merges two or more arrays into one new array.
+
+7. Sorting an Array
+
+Sorts elements in an array in ascending or descending order.
+
+8. Sorting an Array of Objects
+
+Sorts objects based on a property, either in ascending or descending order.
+
+9. Fill()
+
+Fills all or specific parts of an array with a static value.
+
+10. Includes()
+
+Checks if a specified element exists in an array.
+
+11. Join()
+
+Joins all array elements into a string with a specified separator.
+
+12. Reverse()
+
+Reverses the order of elements in an array.
+
+13. Push()
+
+Adds elements to the end of an array.
+
+14. Pop()
+
+Removes the last element from an array.
+
+15. Shift()
+
+Removes the first element from an array.
+
+16. Unshift()
+
+Adds elements to the beginning of an array.
+
+17. IndexOf()
+
+Finds the first occurrence of an element in an array.
+
+18. LastIndexOf()
+
+Finds the last occurrence of an element in an array.
+
+19. Every()
+
+Checks if all elements in an array satisfy a given condition.
+
+20. Some()
+
+Checks if at least one element in an array satisfies a given condition.
+
+21. Cloning an Array
+
+Different methods to create a copy of an array using:
+
+Spread Operator
+
+Slice Method
+
+Concat Method
+
+Array.from()

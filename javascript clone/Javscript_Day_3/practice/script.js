@@ -963,7 +963,7 @@
 
 
 
-//Array and its inbuilt Methods:
+//------------------------------------------------Array and its inbuilt Methods:--------------------------------------------------------
 
 
 //Normal array:
@@ -1109,6 +1109,272 @@
 
 
 
+//Flattening an array using reduce
+
+// let nestedarr=[[1,2],[3,4],[5,6]];
+
+// let normalarr=nestedarr.reduce((acc,value)=>acc.concat(value)).flat().reverse();
+// console.table(normalarr);
+
+
+
+
+//Largest element in an array using reduce
+
+// const arr=[23,45,21,87,37];
+// let largest_element=arr.reduce((accumulator,current_value)=>{
+//     return Math.max(accumulator,current_value);
+// });
+
+// console.log(largest_element);
+
+
+// Slice();
+
+// const arr=[1,2,3,4,5,6,7,8];
+
+// console.log(arr.slice()); //returns a new array wih same elements
+
+// console.log(arr.slice(2));// takes index 0 and 1 and prints the rest of the elements -[3,4,5,6,7,8];
+
+// console.log(arr.slice(2,6));//[start,end] - [3,4,5,6]
+
+// console.log(arr.slice(6,2));//gives an empty array
+
+// console.log(arr.slice(-2,-5));//gives an empty arr;
+
+
+//Splice(): -- changes original array
+
+// const arr=[1,2,3,4,5,6,7,8];
+// let b =arr.splice(2,3);
+// console.log(arr);//[1,2]
+// console.log(b);//gives an empty array
+
+// console.log(b.splice(2));// removes index 0 and 1 and prints the rest of the elements in the array
+
+// console.log(b.splice(2,3));//[index,length]- [3,4,5]- started from index 2 i.e element 3 and printed upto 3 elements;
+
+
+// let b = arr.splice(2,0,24,25);//- can insert an element using array[index to insert,element to delete,value to insert,value to insert] - [this will insert 24 and 25 in second index] 
+// console.log(arr);
+
+
+//Concat in array
+
+
+// const a=[1,2,3,4];
+
+// const b=[5,6,7,8];
+
+// const c =a.concat(b,9,9,9);//[1,2,3,4,5,6,7,8,9,9,9];
+// console.log(c);
+
+
+
+//Sort in array
+
+// const num = [4,7,5,2,9,1,0];
+
+// console.log(num.sort());//[0,1,2,4,5,7,9]
+
+// const alpha =['cake','doll','eagle','apple'];
+
+// console.log(alpha.sort());//[apple,cake,doll,eagle]
+
+// Ascending order in sort using arrow function
+
+// const Rand_num=[34,54,12,21,33,11,87,3];
+
+// Rand_num.sort((a,b)=>{
+//    return a-b;
+// })
+
+// console.log(Rand_num);
+
+
+
+// Descending order in sort using arrow function
+
+// const Rand_num=[34,54,12,21,33,11,87,3];
+
+// Rand_num.sort((a,b)=>{
+//     return b-a;
+//  })
+ 
+//  console.log(Rand_num);
+
+ 
+//Sorting object in Ascending order using sort():
+
+// const users=[
+//     {Full_name:"Vignesh",Age:21,City:"Chennai",State:"Tamilnadu"},
+//     {Full_name:"Vishwesh",Age:23,City:"Kadappa",State:"Andhra pradesh"},
+//     {Full_name:"Arun",Age:17,City:"Chennai",State:"Tamilnadu"},
+//     {Full_name:"Rajin",Age:21,City:"Kanoor",State:"Kerala"},
+//     {Full_name:"Deep",Age:23,City:"Kolkata",State:"West Bengal"}
+// ];
+
+// users.sort((a,b)=>{
+//    return a.Age-b.Age
+// });
+
+// console.log(users);
+
+
+//Sorting object in Descending order using sort():
+
+
+// const users=[
+//     {Full_name:"Vignesh",Age:21,City:"Chennai",State:"Tamilnadu"},
+//     {Full_name:"Vishwesh",Age:23,City:"Kadappa",State:"Andhra pradesh"},
+//     {Full_name:"Arun",Age:17,City:"Chennai",State:"Tamilnadu"},
+//     {Full_name:"Rajin",Age:21,City:"Kanoor",State:"Kerala"},
+//     {Full_name:"Deep",Age:23,City:"Kolkata",State:"West Bengal"}
+// ];
+
+
+// users.sort((a,b)=>{
+//    return b.Age-a.Age;
+// });
+
+
+// console.log(users);
+
+
+//Fill() in array:(value,start,end);
+
+
+
+// const ordinary= [1,2,3,4,5];
+// console.log(ordinary.fill(2)); - [2,2,2,2,2] - fills all the elements in the array with the given number
+
+
+
+
+// const ordinary= [1,2,3,4,5];
+// console.log(ordinary.fill(2,3)); // - [1,2,3,2,2] - fills the number 2 from the index 3
+
+
+
+// const ordinary= [0,1,2,3,4,5,6,7,8,9];
+
+// console.log(ordinary.fill(2,5,7));// - [0,1,2,3,4,2,2,7,8,9] - fills the number 2 from index 5 to index 7
+
+
+
+//Includes() in Array
+
+
+// const arr=['pencil','Pencil','rubber','scale'];
+
+// console.log(arr.includes('rubber'));//true
+
+
+// console.log(arr.includes('Scale'));// false
+
+
+// console.log(arr.includes('pencil',1));//true - start searching from 1st index;
+
+
+// let b = arr.map(values=>values.toLowerCase().includes('pen')  - using toLowerCase() we are changing the letters into lowercase nd checking whether
+// );
+
+// console.log(b);
+
+
+
+
+//Join() in Array:
+
+
+// const abc=['apple','banana','cat','doll','elephant'];
+
+// console.log(abc.join());// default join symbol is ',';
+
+// console.log(abc.join(' | '));//[a|b|c|d|e];
+
+
+// console.log(abc.join(' + ')); //[a+b+c+d+e];
+
+
+// console.log(abc.join(' - ')); //[a-b-c-d-e];
+
+
+
+
+
+
+//Reverse() in array
+
+
+// const number=[0,1,2,3,4,5,6,7,8,9];
+
+// console.log("Before reverse : "+number);
+
+// console.log("After reverse : "+number.reverse());
+
+
+// Reversing an object using reverse() function
+
+// const obj = {0:10,1:20,2:30,3:40,4:50,length:5};
+// console.log(obj);
+
+// Array.prototype.reverse.call(obj);
+// console.log(obj);
+
+
+
+
+
+//Push() in array - it is used to push an element inside an array at last
+//Numbers
+
+// const push = [1,2,3,4];
+
+// push.push(5,4,6,7,21);
+// console.log(push);
+
+
+//Strings
+// const str = ['Apple'];
+
+// str.push("banana","Pinapple");
+// // console.log(str);
+
+
+//Push using spread operator
+
+// const pull = ['carrot'];
+
+// pull.push(...str,'beans');
+// console.log(pull);
+
+
+
+
+//Pop in array - removes an element from an array from last index
+
+
+//Number
+
+// const a = [1,2,3,4,5,6,7,8,9];
+
+
+// a.pop();
+// console.log(a);//[1,2,3,4,5,6,7,8];
+
+
+
+//String
+
+// const b =['arun','barun','vignesh','vinayak','bignesh'];
+
+// b.pop();
+// console.log(b);//['arun','barun','vignesh','vinayak'];
+
+// pop and push is for adding and removing element from last 
+//shift() is to remove the first element from an array
 
 
 
@@ -1116,9 +1382,93 @@
 
 
 
+//Shift() - remove element from first
 
 
-// Every(Array)
+// //Number
+// const tift = [1,2,3,4,5,6,7,8,9];
+// tift.shift();
+// console.log(tift);//[2,3,4,5,6,7,8,9];
+
+
+// //String
+
+// const strift=['jilo','helo','milo','polo'];
+
+// strift.shift();
+
+// console.log(strift);
+
+
+
+//unshift -- adds element from first
+
+// //Numbers
+// const add = [1,2,3,5,6,7,8,9];
+// add.unshift(0);
+
+// console.log(add);
+
+
+// //String
+// const str = ['a','b','c'];
+// add.unshift('z');
+
+// console.log(add);
+
+
+
+//indexOf() --to find the index of an specific element
+
+
+
+// //Number
+// const ab=[34,35,22,75,28,54,37];
+
+// console.log(ab.indexOf(22));
+
+
+// const ab=[34,35,22,75,28,54,37];
+
+// console.log(ab.indexOf(22,1));//telling to search from where to start
+
+
+
+
+// //String
+// const ba=['arun','rajin','vishwesh','vignesh'];
+
+// console.log(ba.indexOf('rajin'));
+
+
+
+
+
+//lastIndexOf() --to find the last index of an specific element
+
+
+
+
+// // //Number
+
+// const ab=[34,22,35,22,75,28,54,37];
+// console.log(ab.lastIndexOf(22));//3
+
+
+
+
+
+
+// //String
+// const ba=['arun','rajin','vishwesh','vignesh','rajin'];
+
+// console.log(ba.lastIndexOf('rajin'));
+
+
+
+
+
+// Every(Array) if all the condition satisfies, the output will be true else false
 
 // const arr = [2,2,8,6,9];
 
@@ -1130,13 +1480,61 @@
 
 
 
-//Some(Array)
+//Some(Array)//if atleast one condition satisfies, the output will be true else false
 
 // let answer=arr.some((value)=>{
 //     return value%2==0;
 // });
 
 // console.log(answer);
+
+
+
+//
+
+// for(let i=0;i<=i+1;i++){
+//  console.log(Number.isFinite(i));
+// }
+
+
+//Multiple ways to clone an Array
+
+// 1. using spread operator
+
+// const one = [1,2,3];
+
+// const two =[...one];
+// console.log(two);
+
+
+
+//2. using Slice method
+
+// const one = [1,2,3];
+
+// const two =one.slice();
+// console.log(two);
+
+
+
+
+//3. using Concat 
+
+// const one = [1,2,3];
+
+// const two =[].concat(one);
+// console.log(two);
+
+
+
+
+
+//4.using Array from
+
+// const one = [1,2,3];
+
+// const two =Array.from(one);
+//  console.log(two);
 
 
 
