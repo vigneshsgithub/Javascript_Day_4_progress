@@ -214,4 +214,64 @@ Slice Method
 
 Concat Method
 
-Array.from()
+22. Array.from() -- to clone an array
+
+
+Objects in javascript:
+
+
+1. Creating Objects
+
+Objects can be created in different ways, like using curly braces {} or the new Object() method.
+
+Objects store related data and functions together.
+
+2. Accessing and Modifying Object Properties
+
+Dot notation (object.property) and bracket notation (object['property']) can be used to get or update values.
+
+3. Deleting Object Properties
+
+The delete keyword removes a property from an object.
+
+4. Checking if a Property Exists
+
+The in operator and hasOwnProperty() method help check if a property exists in an object.
+
+5. Looping Through Objects
+
+for...in loops can iterate over object properties.
+
+6. Extracting Keys, Values, and Entries
+
+Object.keys() gets all keys, Object.values() gets all values, and Object.entries() converts an object into an array.
+
+7. Freezing and Sealing Objects
+
+Object.freeze() prevents changes to an object.
+
+Object.seal() allows modification but prevents adding or removing properties.
+
+8. Object Prototypes and Inheritance
+
+Objects can inherit properties using __proto__, setPrototypeOf(), and getPrototypeOf().
+
+9. Creating Objects from Arrays
+
+Object.fromEntries() converts an array into an object.
+
+10. Object References and Comparison
+
+Objects are stored by reference, meaning modifying one reference changes all copies.
+
+JSON.stringify(obj1) === JSON.stringify(obj2) is used to compare objects.
+
+11. Shorthand Properties and Destructuring
+
+Variables can be directly used in objects without writing key-value pairs separately.
+
+Destructuring allows extracting values from objects easily.
+
+12. Spread and Rest Operators
+
+The spread operator (...) helps copy and merge objects quickly.

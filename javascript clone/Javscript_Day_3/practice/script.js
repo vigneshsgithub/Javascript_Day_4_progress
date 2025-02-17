@@ -944,6 +944,11 @@
 // let c = lname.replace('kumaran','kumar');
 // console.log(c);
 
+//String replaceall()
+
+// let c = lname.replaceall('kumaran','kumar');
+// console.log(c);
+
 
 //String trim()
 
@@ -1490,8 +1495,15 @@
 
 
 
-//
+//copyWithin() - copies the elements from one index to another index
 
+// const arr=[1,2,3,4,5,6,7,8,9,10];
+// console.log(arr.copyWithin(2,4,6)); // [1,2,5,6,5,6,7,8,9,10] - copies the elements from index 4 to index 6 and paste it in index 2; 
+
+//toSpliced() - removes the elements from an array and returns the removed elements
+//  const arr=[1,2,3,4,5,6,7,8,9,10];
+//  const arr1= arr.toSpliced(2,4);//[1,2,7,8,9,10] - removes the elements from index 2 to length 4
+// console.log(arr1);
 // for(let i=0;i<=i+1;i++){
 //  console.log(Number.isFinite(i));
 // }
@@ -1531,19 +1543,133 @@
 
 //4.using Array from
 
-// const one = [1,2,3];
-
-// const two =Array.from(one);
-//  console.log(two);
-
-
-
+//  const one = [2,2,3];
+// const two = [4,5,5];
+//  const three = Array.bind(null,one);function greet(greeting, punctuation) {
+//     return greeting + ', ' + this.user + punctuation;
+// }
 
 
 
 
 
 
+//--------------------------Object and its inbuilt methods:----------------------------------------------------------
+
+
+
+
+//Normal Object creation:
+
+
+// const student = {
+//     fullname:"vignesh",
+//     marks:80,
+//     age:21,
+//     city:"chennai",
+//     printmarks:function(){
+//         console.log(`the marks of ${this.fullname} is ${this.marks} which is very good mark and he is from ${this.city} `);
+//     }
+// }
+
+// student.printmarks();
+
+
+
+
+
+
+//creating object using new object:
+
+// const person = new Object();
+// person.fullname="vignesh";
+// person.age=21;
+// console.log(person);
+
+
+
+
+
+
+
+//copying and creating object using object.create method:
+
+
+// const user1={
+// greet(){
+//     console.log("Hello");
+// }
+// }
+
+// const user2=Object.create(user1);
+// user2.fullname="vignesh";
+// user2.age=26;
+// console.log(user2.age);
+
+
+
+
+
+
+//Creating object in a class(ES6)
+
+// class person{
+//     constructor(fname,age){
+//         this.fname=fname;
+//         this.age=age;
+//     }
+// }
+// const john = new person("arun",25);
+// console.log(john);
+
+
+
+
+
+
+//Accessing and modifying Object methods
+
+
+
+//Dot Notation:(Modifying values using Dot notation)
+
+// const company={
+//     emp_name:"deep",
+//     emp_id:2340,
+// }
+// company.emp_id=2345;
+// console.log(company.emp_id);
+
+
+
+
+
+
+//Bracket Notation(Modifying Object using Bracket Notation):
+
+// const user={
+//     lname:"kumar",
+//     age:48
+// }
+
+// user['age']=36;//modifying it here and it can also be used when objects property has any space or special symbols ex:-(full name : 'vignesh')
+// console.log(user.age);
+
+
+
+
+
+
+//// Deleting an object property using delete keyword
+
+// const user={
+//     name:"vignesh",
+//     age:21,
+//     city:"chennai"
+// }
+
+// delete user.age;
+// console.log(user.age);// as we have deleted it using the delete keyword it will result as undefined.
 
 
 
@@ -1552,6 +1678,311 @@
 
 
 
+//Checking property in an object using (in) operator
+
+// const user={
+//     fname:"vignesh",
+//     age:21,
+//     city:"chennai"
+// }
 
 
+// console.log("fname" in user);//should put the property name in quotes
+
+
+
+
+
+
+
+//checking whether the object has the property in the object itself using hasOwnProperty method
+
+// const user={
+//     fname:"vignesh",
+//     age:21,
+//     city:"chennai"
+// }
+
+// const person={
+//     fname:"arun",
+//     age:21,
+//     city:"chennai"
+// }
+
+// console.log(Object.hasOwn(person,"fname"));//true
+// console.log(Object.hasOwn(user,"lname"));//false
+
+
+
+
+
+
+
+
+//Checking property in an object using hasOwnProperty method
+
+
+// const user={
+//     fname:"vignesh",
+//     age:21,
+//     city:"chennai"
+// }
+
+// console.log(user.hasOwnProperty("fname"));//should put the property name in quotes
+
+
+
+
+
+
+
+// For in loop(especially useful in objects)
+
+
+// const user={
+//     lname:"arunkumar",
+//     age:42,
+//     city:"salem"
+// }
+
+
+
+// for(let vignesh in user){
+//     console.log(user[vignesh]);//this will extract the details inside the object(values one by one)
+// }
+
+
+
+
+//Object.keys() - to extract only the keys of an object
+
+
+// const user={
+//     lname:"arunkumar",
+//     age:42,
+//     city:"salem"
+// }
+
+// console.log(Object.keys(user));//['lname',age,'city']
+
+
+
+
+//Object.values() - to extract only the values of an object
+
+
+
+// const user={
+//     lname:"arunkumar",
+//     age:42,
+//     city:"salem"
+// }
+
+// console.log(Object.values(user));//['arunkumar',42,'salem']
+
+
+
+/* //Object.entries()- to convert an object into array
+(first element is the key and second element is the value) */
+
+
+
+// const vignesh={
+//     first_name:"Vishwesh",
+//     age:23,
+//     city:"kadappa"
+// }
+
+// console.log(Object.entries(vignesh));
+
+
+
+
+
+
+
+
+//Object.freeze()- it is used when we want the values to be constant if someone tries to modify it
+//cannot add,modify or delete
+
+// const remitbee={
+//     First_name:"rajin",
+//     age:30,
+//     state:"kerala"
+// }
+
+// Object.freeze(remitbee);
+// remitbee.First_name="vignesh";// there will be no changes it can't modify
+// remitbee.age=12;// there will be no changes it can't modify
+// console.log(remitbee.First_name);
+// console.log(remitbee.age);//same values will be present
+
+
+//Object.seal() - it is used if we want to modify but not add or delete an object
+
+
+// const a={
+//     first_name:"vissu",
+//     age:10,
+//     city:"kadappa"
+// }
+
+// Object.seal(a);
+
+// a.first_name="akshay";
+// delete a.age;// there will be no effect
+// a.state??="Andhra";//there will be no effect
+// console.log(a.first_name);
+// console.log(a.age);
+// console.log(a.state);
+
+
+
+
+
+
+// Object using proto method to inherit the properties of another object(old method):
+
+
+// const employee = {
+//     vignesh(){
+//         console.log(`the name of the employee is ${this.fullname} and he is from ${this.city}`);
+//     }}
+
+// const employee1 = {
+//     fullname:"arun",
+//     city:"chennai"
+// }
+
+// employee1.__proto__=employee;
+// employee1.vignesh();
+
+
+
+
+
+
+// (new method using setPrototypeOf and getPrototypeOf):
+
+// const animal={
+//     Noise(){
+//      console.log("the animal makes noise");
+//     }
+// }
+
+
+// const dog={
+//     bark(){
+//         console.log("the dog barks");
+//     }
+// }
+
+// Object.setPrototypeOf(dog,animal);
+// Object.getPrototypeOf(dog).Noise();
+// dog.bark();
+// dog.Noise();
+
+
+
+
+
+
+
+// //fromEntries() - it is used to create an object using an array which should be in substring format like Object.entries format
+
+
+// const a=[["emp_name","vignesh_kumar"],["age",29],["city","chennai"]];
+
+// const b = Object.fromEntries(a);
+
+// console.log(b);//b={emp_name:"vignesh_kumar",age:29,city:"chennai"};
+
+
+
+
+//Object reference - Objects are stored by reference not by value
+
+
+// const obj1={
+//     fname:"senthil",
+//     age:36,
+//     location:"karnataka"
+// }
+
+// const obj2=obj1;
+// obj2.fname="satish kumar verma";
+// console.log(obj1.fname);//it will be modified to satish as the object is only stored using reference we can manipulate it
+
+
+
+
+
+
+//Object Comparison -  To compare to two objects  we can use json.stringify()
+
+
+// const a={
+//     x:10
+// };
+
+// const b={
+//     x:10
+// };
+
+// console.log(JSON.stringify(a)===JSON.stringify(b));// should use strict equal for better comparison
+
+
+
+
+
+
+//short-hand properties
+
+//storing object keys in an variable to access it easily
+// const name="john";
+// const age=14;
+// const person = {name,age};
+// console.log(person);//{name:"john",age:14} - just storing these variables in an single object.
+
+
+
+
+
+
+
+//Object destructuring - as it is destructured we can easily access the data 
+
+
+// const person={
+//     name:"ramesh",
+//     age:24,
+// }
+
+// const {name,age} = person;
+// console.log(name);//ramesh
+// console.log(age);//24
+
+
+
+
+
+
+
+
+//Rest operator /spread operator in object to copy another object:
+
+
+// const userone={
+//     name:"sivanesh",
+//     country:"canada",
+//     gender:"male"
+// }
+
+// const user2={
+//     ...userone,
+//     age:40
+// }
+
+
+// console.log(user2);
 
